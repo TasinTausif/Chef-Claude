@@ -10,10 +10,10 @@ function App() {
     <>
       {/* <Counter /> */}
       {/* <ObjArr /> */}
-      <Form />
+      {/* <Form /> */}
 
-      {/* <Header />
-      <Main /> */}
+      <Header />
+      <Main />
     </>
   )
 }
