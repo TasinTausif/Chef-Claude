@@ -1,4 +1,5 @@
 import './App.css'
+import Soundpads from './Soundpads'
 import Header from './Header'
 import Main from './Content'
 import Counter from './Counter'
@@ -11,9 +12,10 @@ function App() {
       {/* <Counter /> */}
       {/* <ObjArr /> */}
       {/* <Form /> */}
+      <Soundpads darkmode={true}/>
 
-      <Header />
-      <Main />
+      {/* <Header />
+      <Main /> */}
     </>
   )
 }
