@@ -4,18 +4,26 @@ import React from "react"
 import Pad from "./components/Pad.jsx"
 
 export default function App({darkmode}) {
-    const [padArray, setPadArray] = React.useState(padData)
+    const [pads, setPads] = React.useState(padData)
     const styles = { 
         backgroundColor: darkmode ? "#222222" : "#FFFFFF",
     }
-    const padButtons = padArray.map(pad => (
+    function handleClick(id){
+        setPads(prevPads => prevPads.map(pad => {
+            return pad.id === id ? {...pad, on: !pad.on} : pad
+        }))
+    }
+
+    const padButtons = pads.map(pad => (
         // Here, in the style attribute, we are putting an obj of styles
         // <button key={pad.id} style={styles}></button>
         <Pad 
             key={pad.id}
             {...pad}
+            toggle={handleClick}
         />
     ))
+
     return (
         <main>
             <div className="pad-container">
