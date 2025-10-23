@@ -1,4 +1,4 @@
-import "./Soundpad.css"
+// import "./Soundpad.css"
 import padData from "./pads.js"
 import React from "react"
 import Pad from "./components/Pad.jsx"

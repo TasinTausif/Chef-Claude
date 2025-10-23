@@ -12,10 +12,10 @@ function App() {
       {/* <Counter /> */}
       {/* <ObjArr /> */}
       {/* <Form /> */}
-      <Soundpads darkmode={true}/>
+      {/* <Soundpads darkmode={true}/> */}
 
-      {/* <Header />
-      <Main /> */}
+      <Header />
+      <Main />
     </>
   )
 }
