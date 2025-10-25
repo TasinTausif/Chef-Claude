@@ -1,7 +1,7 @@
 import React from "react"
 import ClaudeRecipe from "./components/ClaudeRecipe"
 import IngredientList from "./components/IngredientsList"
-import { getRecipeFromMistral } from "./data/ai"
+import { getRecipeFromApi } from "./data/ai"
 
 export default function Main() {
 
@@ -15,7 +15,7 @@ export default function Main() {
         setIngredients(prevIngredients => [...prevIngredients, newIngredient])
     }
     async function getRecipe(){
-        const recipeMarkdown = await getRecipeFromMistral(ingredients)
+        const recipeMarkdown = await getRecipeFromApi(ingredients)
         setRecipe(recipeMarkdown)
     }
 
