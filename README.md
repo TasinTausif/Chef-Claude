@@ -1,18 +1,48 @@
-# React + Vite
+# 👨‍🍳 Chef Claude
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Chef Claude is an AI-powered recipe suggestion app built with **React**, **Vite**, and the **Hugging Face Inference API**.  
+It takes a list of ingredients you have and generates a delicious recipe — formatted beautifully in Markdown!
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 🧠 AI-generated recipes using **Mistral (Mixtral-8x7B-Instruct)** via Hugging Face  
+- ✨ Markdown-rendered output with **react-markdown**  
+- ⚡ Built with **React + Vite** for fast performance  
+- 🍅 User-friendly ingredient input and result display  
+- 🔐 Secure use of API key through environment variables  
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** React, Vite, TailwindCSS  
+- **AI Model:** Mistral 8x7B via Hugging Face Inference API  
+- **Markdown Rendering:** `react-markdown` + `react-syntax-highlighter`  
+- **Environment Handling:** Vite environment variables  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙️ Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/TasinTausif/Chef-Claude.git
+   cd Chef-Claude
+   
+2. Install dependencies
+   ```bash
+   npm install
+
+3. Set up environment variables
+    Create a .env file in the project root and add:
+    ```bash
+      VITE_HF_ACCESS_TOKEN=your_huggingface_token_here
+
+4. Run the app
+    ```bash
+    npm run dev
+
+5. Open in browser
+    Visit → http://localhost:5173
