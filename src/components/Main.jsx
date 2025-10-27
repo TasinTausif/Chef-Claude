@@ -7,8 +7,14 @@ export default function Main() {
 
     const [ingredients, setIngredients] = React.useState([])
     const [recipe, setRecipe] = React.useState("")
-
-    
+    // useRef hook is used to create a reference to a DOM element or a React component
+    const recipeSectionRef = React.useRef(null)//Here, initializing a ref to null and we'll get current: null in the browser console
+    React.useEffect(() => {
+        if(recipe !== "" && recipeSectionRef.current !== null){
+            // In the code bellow, we are using the scrollIntoView method to scroll to the referenced element and by adding additional options as behavior: smooth, the transition will happen smoothly when a new recipe is set.
+            recipeSectionRef.current.scrollIntoView({behavior: "smooth"})
+        }
+    }, [recipe])    
 
     function addIngredient(formData) {
         const newIngredient = formData.get("ingredient")
@@ -21,7 +27,7 @@ export default function Main() {
 
     return (
         <main>
-            {!recipe && <form action={addIngredient} className="add-ingredient-form">
+            <form action={addIngredient} className="add-ingredient-form">
                 <input
                     type="text"
                     placeholder="e.g. oregano"
@@ -30,8 +36,8 @@ export default function Main() {
                 />
                 <button>Add ingredient</button>
             </form>
-            }
-            {!recipe && ingredients.length > 0 && <IngredientList
+            {ingredients.length > 0 && <IngredientList
+                refHook={recipeSectionRef}
                 ingredients={ingredients}
                 getRecipe={getRecipe}
             />}

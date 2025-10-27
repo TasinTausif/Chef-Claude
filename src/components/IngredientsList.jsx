@@ -8,7 +8,8 @@ export default function (props) {
             <h2>Ingredients on hand:</h2>
             <ul className="ingredients-list" aria-live="polite">{ingredientsListItems}</ul>
             {props.ingredients.length > 3 && <div className="get-recipe-container">
-                <div>
+                {/* Here, ref is a react element that allows us to directly interact with the DOM */}
+                <div ref={props.refHook}>
                     <h3>Ready for a recipe?</h3>
                     <p>Generate a recipe from your list of ingredients.</p>
                 </div>
