@@ -1,7 +1,7 @@
 import React from "react"
-import ClaudeRecipe from "./components/ClaudeRecipe"
-import IngredientList from "./components/IngredientsList"
-import { getRecipeFromApi } from "./data/ai"
+import ClaudeRecipe from "./ClaudeRecipe"
+import IngredientList from "./IngredientsList"
+import { getRecipeFromApi } from "../data/ai"
 
 export default function Main() {
 
