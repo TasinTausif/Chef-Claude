@@ -1,13 +1,15 @@
 // import "./Soundpad.css"
-import padData from "./pads.js"
+import padData from "./data/pads.js"
 import React from "react"
 import Pad from "./components/Pad.jsx"
 
 export default function App({darkmode}) {
     const [pads, setPads] = React.useState(padData)
+
     const styles = { 
         backgroundColor: darkmode ? "#222222" : "#FFFFFF",
     }
+
     function handleClick(id){
         setPads(prevPads => prevPads.map(pad => {
             return pad.id === id ? {...pad, on: !pad.on} : pad

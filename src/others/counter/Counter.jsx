@@ -1,5 +1,5 @@
 import React from "react"
-import "./Counter.css"
+// import "./Counter.css"
 import CountC from "./components/Count"
 
 export default function() {

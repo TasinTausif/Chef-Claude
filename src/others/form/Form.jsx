@@ -22,7 +22,7 @@ export default function () {
     // Grabbing all the obj from form
     function handleSubmit(formData) {
         // With the following format we'll get all form data in an object except checkboxes with multiple selections
-        data = Object.fromEntries(formData);
+        const data = Object.fromEntries(formData);
         // To get all selected checkboxes values, apply the method used earlier
         const dietaryData = formData.getAll('dietaryRestrictions');
         const allData = { ...data, dietaryRestrictions: dietaryData };

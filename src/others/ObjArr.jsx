@@ -1,7 +1,7 @@
 import React from "react"
-import avatar from "./assets/chef-claude.png"
-import starFilled from "./assets/react.svg"
-import starEmpty from "../public/vite.svg"
+import avatar from "../assets/chef-claude.png"
+import starFilled from "../assets/react.svg"
+import starEmpty from "../../public/vite.svg"
 
 export default function App() {
     const [contact, setContact] = React.useState({
