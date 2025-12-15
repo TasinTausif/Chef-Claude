@@ -24,10 +24,15 @@ header > img {
 
 header > h1 {
     font-weight: 400;
+    color:#141413
 }
 
 main {
     padding: 30px 30px 10px;
+}
+
+main > section > h2, h3{
+    color: #141413;
 }
 
 .add-ingredient-form {
