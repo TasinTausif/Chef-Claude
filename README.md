@@ -5,6 +5,13 @@ It takes a list of ingredients you have and generates a delicious recipe — for
 
 ---
 
+## 🌐 Live Demo
+
+👨‍🍳 **Get your recipe here:**  
+👉 https://chef-claude-iota-topaz.vercel.app/
+
+---
+
 ## 🚀 Features
 
 - 🧠 AI-generated recipes using **Mistral (Mixtral-8x7B-Instruct)** via Hugging Face  
