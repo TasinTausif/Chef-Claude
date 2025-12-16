@@ -15,6 +15,22 @@ It takes a list of ingredients you have and generates a delicious recipe — for
 
 ---
 
+## 📸 Screenshots
+
+### Home Page
+<img src="./screenshots/home.png" alt="Home Page" />
+
+### Adding Ingredients
+<img src="./screenshots/addIngredients.png" alt="Adding Ingredients" />
+
+### Recipe Ready
+<img src="./screenshots/recipeReady.png" alt="Recipe Ready" />
+
+### Recipe
+<img src="./screenshots/fullRecipe.png" alt="Recipe" />
+
+---
+
 ## 🛠️ Tech Stack
 
 - **Frontend:** React, Vite, TailwindCSS  
